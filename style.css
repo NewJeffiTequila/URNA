@@ -1,9 +1,14 @@
+@keyframes pisca{
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
 body{
     margin: 0;    
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .urna{
@@ -65,9 +70,58 @@ body{
 }
 .d1-left{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+.d1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d1-3{
+    height: 50px;
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 40px;
+}
+.pisca{
+    animation: pisca 2s infinite;
+}
+.d1-4{
+    flex: 1;
+    line-height: 30px;
 }
 .d1-right{
     width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d1-image{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.d1-image img{
+    width: 100%;
+}
+.small{
+    width: 80%;
+    font-size: 12px;
 }
 .d2{
     height: 50px;
