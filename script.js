@@ -41,15 +41,39 @@ function comecarEtapa() {
     
 }
 function atualizarInteface() {
+    // pega a etapa atual
+    let etapa = etapas[etapaAtual];
     
+    // faz um filtro noss candidatos
+    let candidato = etapa.candidatos.filter((item)=>{
+        if (item.numero === numero) {
+            return true;
+        }else{
+            return false;
+        }
+    });
+    console.log('Candidato', candidato);
 }
 
 function clicou(n) {
     // pega todos os elementos que tem a class numero e pisca
     let elNumero = document.querySelector('.numero.pisca');
+    // VERIFICA SE O ELEMENTO NÃO 
     if (elNumero !== null) {
+        // PASSA O NUMERO QUE VEI COMO PARAMENTRO PARA O ELEMENTO NUMERO
         elNumero.innerHTML = n;
+        // CONCATENA O NUMERO DIGITADO COM O NUMERO QUE FOI DIGITADO ANTERIORMENTE
         numero = `${numero}${n}`;
+        // remove a class pisca do elemento
+        elNumero.classList.remove('pisca');
+        // verifica se o proximo elemento é nulo
+        if (elNumero.nextElementSibling !== null) {
+            // adiciona a class pisca pro proximo elemento
+            elNumero.nextElementSibling.classList.add('pisca');
+        }else{
+            atualizarInteface();
+        }
+
     }
 }
 function branco( ) {

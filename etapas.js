@@ -4,7 +4,7 @@ let etapas = [
         numeros:5,
         candidatos:[
             {
-                numeros:31555,
+                numeros:'31555',
                 nome:'Aurélio Gomes',
                 partido:'PT',
                 fotos:[
@@ -13,7 +13,7 @@ let etapas = [
                         legenda:'Vereador',
                     }
                 ],
-                numeros:56565,
+                numeros:'56565',
                 nome:'Carlos Hermes',
                 partido:'PC do B',
                 fotos:[
@@ -30,7 +30,7 @@ let etapas = [
         numeros:2,
         candidatos:[
             {
-                numeros:99,
+                numeros:'99',
                 nome:'Assis Ramos',
                 partido:'PT',
                 vice:'PrAlex',
@@ -45,22 +45,7 @@ let etapas = [
                         small:true
                     }
                 ],
-                numeros:99,
-                nome:'Assis Ramos',
-                partido:'PT',
-                vice:'PrAlex',
-                fotos:[
-                    {
-                        url:'Assis.jpg',
-                        legenda:'Prefeito'
-                    },
-                    {
-                        url:'PrAlex.jpg',
-                        legenda:'Vice-Prefeito',
-                        small:true
-                    }
-                ],
-                numeros:45,
+                numeros:'45',
                 nome:'Sebastião Madeira',
                 partido:'PSDB',
                 vice:'Brasmar',
